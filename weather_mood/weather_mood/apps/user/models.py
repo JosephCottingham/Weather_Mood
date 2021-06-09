@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 from datetime import datetime
-from project_name.apps.core.models import (
+from weather_mood.apps.core.models import (
     UuidBase,
     CreationModificationDateBase
 )

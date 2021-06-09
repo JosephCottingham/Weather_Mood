@@ -15,9 +15,9 @@ services:
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./project_name:/code
+      - ./weather_mood:/code
     environment:
-      - DJANGO_SETTINGS_MODULE=project_name.settings.dev
+      - DJANGO_SETTINGS_MODULE=weather_mood.settings.dev
     ports:
       - "8000:8000"
     depends_on:

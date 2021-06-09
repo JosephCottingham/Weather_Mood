@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from project_name.apps.core.versioning import get_git_changeset_timestamp
+from weather_mood.apps.core.versioning import get_git_changeset_timestamp
 load_dotenv()
 
 
@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'project_name.apps.core',
-    'project_name.apps.user',
+    'weather_mood.apps.core',
+    'weather_mood.apps.user',
 ]
 
 
@@ -89,7 +89,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_name.urls'
+ROOT_URLCONF = 'weather_mood.urls'
 
 TEMPLATES = [
     {
@@ -107,7 +107,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_name.wsgi.application'
+WSGI_APPLICATION = 'weather_mood.wsgi.application'
 
 
 # Database

@@ -1,4 +1,4 @@
-"""project_name URL Configuration
+"""weather_mood URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.shortcuts import redirect
 
-from project_name.apps.core import views as core_views
+from weather_mood.apps.core import views as core_views
 
 
 urlpatterns = [

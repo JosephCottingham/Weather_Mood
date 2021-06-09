@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.utils.timezone
-import project_name.apps.user.models
+import weather_mood.apps.user.models
 import uuid
 
 
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 'abstract': False,
             },
             managers=[
-                ('objects', project_name.apps.user.models.UserManager()),
+                ('objects', weather_mood.apps.user.models.UserManager()),
             ],
         ),
     ]
