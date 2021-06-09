@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'weather_mood.apps.core',
     'weather_mood.apps.user',
+    'weather_mood.apps.mood'
 ]
 
 

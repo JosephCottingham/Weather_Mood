@@ -1,1 +1,7 @@
-# Django_Gen_Template
+# Weather_Mood
+
+## Dev Start (Bash)
+
+```
+docker-compose up
+```

@@ -21,9 +21,12 @@ from django.conf.urls.static import static
 from django.shortcuts import redirect
 
 from weather_mood.apps.core import views as core_views
+from weather_mood.apps.mood import views as mood_views
 
 
 urlpatterns = [
+    path('', mood_views.Mood_View.as_view(), name='Mood_View'),
+    path('add/', mood_views.Mood_CreateView.as_view(), name='Mood_CreateView'),
     path("admin/", admin.site.urls),
     path("js-settings/", core_views.js_settings, name="js_settings"),
 ]

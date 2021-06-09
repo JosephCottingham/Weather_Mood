@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Mood View</h1>
+<a href="{% url 'Mood_CreateView' %}">add</a>
+{% for object in mood_list %}
+<div>
+    {{ object.mood_str }}
+    {{ object.weather }}
+    {{ object.ip }}
+</div>
+{% endfor %}
+{% endblock %}
+
+
+
+

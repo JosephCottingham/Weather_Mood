@@ -1,11 +1,10 @@
 <!doctype html>
-{% load i18n static sekizai_tags %}
+{% load i18n static %}
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{% block head_title %}{% endblock %}</title>
-    {% include "misc/includes/favicons.html" %}
     {% block meta_tags %}{% endblock %}
 
     <link rel="stylesheet"
@@ -17,7 +16,6 @@
           crossorigin="anonymous" />
 
     {% block css %}{% endblock %}
-    {% render_block "css" %}
     {% block extra_head %}{% endblock %}
 </head>
 <body>
@@ -41,7 +39,6 @@
             crossorigin="anonymous"></script>
     <script src="{% url 'js_settings' %}"></script>
     {% block js %}{% endblock %}
-    {% render_block "js" %}
     {% block extra_body %}{% endblock %}
 </body>
 </html>
